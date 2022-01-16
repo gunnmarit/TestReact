@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <small><a href= "https://github.com/gunnmarit/TestReact"> Open-source code</a> by Gunn Marit Hagen</small>
   </React.StrictMode>,
   document.getElementById('root')
 );
