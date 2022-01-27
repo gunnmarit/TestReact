@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "bootstrap/dist/css/bootstrap.css";
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <small><a href= "https://github.com/gunnmarit/TestReact"> Open-source code</a> by Gunn Marit Hagen</small>
+    <small><a href= "https://github.com/gunnmarit/TestReact" target="_blank"> Open-source code</a> by Gunn Marit Hagen</small>
   </React.StrictMode>,
   document.getElementById('root')
 );
