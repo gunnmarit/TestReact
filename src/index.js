@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.css";
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <small><a href= "https://github.com/gunnmarit/TestReact" target="_blank"> Open-source code</a> by Gunn Marit Hagen</small>
+    <small><a href= "https://github.com/gunnmarit/TestReact" target="_blank" rel="noreferrer" > Open-source code</a> by Gunn Marit Hagen</small>
   </React.StrictMode>,
   document.getElementById('root')
 );

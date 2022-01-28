@@ -3,7 +3,7 @@ import axios from "axios";
 import "./Forecast.css";
 
 export default function Forecast() {
-  let [city, setCity] = useState("");
+  let [city, setCity] = useState("Bergen");
   let [theWeather, setTheWeather] = useState("");
 
   function getForecast(response) {
