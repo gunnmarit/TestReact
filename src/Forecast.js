@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Forecast.css";
+import "bootstrap/dist/css/bootstrap.css";
 
 export default function Forecast() {
   let [city, setCity] = useState("Bergen");
@@ -37,7 +38,7 @@ export default function Forecast() {
   }
 
   return (
-    <div className="row">
+    <div className="row mt-3">
       <div className="col-sm-3"></div>
       <div className="col-sm-6">
         <div className="justify-content-center" id="allDays">
@@ -47,7 +48,7 @@ export default function Forecast() {
               placeholder="Enter your city......."
               onChange={getWeather}
             />
-            <input type="submit" value="Search" />
+            <input type="submit" value="Search" className="formSearch"/>
           </form>
           <div>{theWeather}</div>
         </div>

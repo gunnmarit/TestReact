@@ -1,10 +1,9 @@
 .App {
   text-align: center;
-  height: 600px;
+  height: 800px;
   width: 100%;
     font-family: "Exo", sans-serif;
     margin: 30px auto;
-    text-align: center;
     background: linear-gradient(
       rgb(215, 172, 240),
       rgb(140, 206, 236),
@@ -14,8 +13,14 @@
 
 h1 {
   color: rgb(111, 61, 116);
-  font-size: 80px;
-  margin: 50px auto;
+  font-size: 100px;
+  padding-top: 80px;
+}
+
+h3 {
+  color: #feffb5;
+padding-top: 50px;
+
 }
 
 ul {
@@ -31,4 +36,9 @@ li::first-letter {
 
 .App-link {
   color: #61dafb;
+}
+
+footer{
+  font-size: 10px;
+  padding-top: 40px;
 }
