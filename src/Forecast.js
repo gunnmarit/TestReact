@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Forecast.css";
+import WeatherTemperature from "./WeatherTemperature";
 import "bootstrap/dist/css/bootstrap.css";
 
 export default function Forecast() {
-  let [city, setCity] = useState("Bergen");
+  let [city, setCity] = useState("");
   let [theWeather, setTheWeather] = useState("");
 
   function getForecast(response) {
@@ -18,7 +19,7 @@ export default function Forecast() {
             alt={response.data.weather[0].description}
           />
         </li>
-        <li>Temperature: {Math.round(response.data.main.temp)} ºC</li>
+        <li> <WeatherTemperature celsius={response.data.main.temp}/></li>
         <li>{response.data.weather[0].description}</li>
         <li>Humidity: {response.data.main.humidity} %</li>
         <li>Wind: {Math.round(response.data.wind.speed)} km/h</li>
