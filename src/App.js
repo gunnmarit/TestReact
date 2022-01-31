@@ -6,7 +6,7 @@ import Forecast from "./Forecast";
 function App() {
   return (
     <div className="App">
-        <h1>what's the weather like</h1>
+        <h1>What's the weather like</h1>
       <Forecast />
       <h3> Wherever you go, <br />
         no matter what the weather, <br />
